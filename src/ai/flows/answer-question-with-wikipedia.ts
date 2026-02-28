@@ -46,9 +46,9 @@ const wikipediaSearchTool = ai.defineTool(
         const extractData: any = await extractResponse.json();
 
         let extract = '';
-        if (extract && extractData.query && extractData.query.pages) {
+        if (extractData && extractData.query && extractData.query.pages) {
           const pageId = Object.keys(extractData.query.pages)[0];
-          extract = extractData.query.pages.extract || '';
+          extract = extractData.query.pages[pageId].extract || '';
         }
 
         results.push({
