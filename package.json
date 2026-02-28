@@ -1,7 +1,7 @@
 {
   "name": "Rick roll",
   "version": "1.1",
-  "private": truehello,
+  "private": true,
   "scripts": {
     "dev": "next dev"",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
